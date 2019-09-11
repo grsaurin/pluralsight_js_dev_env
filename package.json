@@ -4,7 +4,13 @@
   "description": "pluralsight js course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open-src": "buildscripts/srcServer.js",
+    "prestart": "node buildscripts/startMessage.js",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3000",
+    "start": "npm-run-all --parallel open-src",
+    "share": "npm-run-all --parallel open-src share"
   },
   "repository": {
     "type": "git",
@@ -37,8 +43,8 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.22.0",
     "jsdom": "^9.8.0",
-    "json-schema-faker": "^0.3.6",
-    "json-server": "^0.8.22",
+    "json-schema-faker": "^0.4.7",
+    "json-server": "^0.15.1",
     "localtunnel": "^1.8.1",
     "mocha": "^3.1.2",
     "nock": "^8.1.0",
