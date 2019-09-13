@@ -22,6 +22,7 @@
     "url": "https://github.com/grsaurin/pluralsight_js_dev_env/issues"
   },
   "dependencies": {
+    "webpack": "^2.7.0",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
@@ -55,7 +56,6 @@
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "surge": "^0.20.4",
-    "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-hot-middleware": "^2.13.0",
     "webpack-md5-hash": "^0.0.5"
