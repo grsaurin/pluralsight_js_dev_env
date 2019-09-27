@@ -10,7 +10,9 @@
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
     "start": "npm-run-all --parallel open-src",
-    "share": "npm-run-all --parallel open-src share"
+    "share": "npm-run-all --parallel open-src share",
+    "lint": "esw webpack.config.* src buildscripts --color",
+    "lint:watch": "npm run lint -- --watch"
   },
   "repository": {
     "type": "git",
