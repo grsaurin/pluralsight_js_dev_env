@@ -4,7 +4,7 @@
   "description": "pluralsight js course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter progress buildScript/testSetup.js \"src/*.test.js\"",
     "open-src": "babel-node buildscripts/srcServer.js",
     "prestart": "babel-node buildscripts/startMessage.js",
     "security-check": "nsp check",
