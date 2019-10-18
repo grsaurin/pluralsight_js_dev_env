@@ -12,7 +12,8 @@
     "start": "npm-run-all --parallel open-src",
     "share": "npm-run-all --parallel open-src share",
     "lint": "esw webpack.config.* src buildscripts --color",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+    "generate-mock-data": "babel-node buildscripts/generateMockData"
   },
   "repository": {
     "type": "git",
